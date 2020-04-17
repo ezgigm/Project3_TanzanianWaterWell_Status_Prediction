@@ -32,23 +32,41 @@ In this project, we used train set and train label set which have 59400 water po
  
  3. Preparing Data to Modeling
  
- 4. Finding Binary Model
+ 4. Finding Binary Model & Baseline 
  
  5. Ternary Target Modeling
  
- 
+***Metric*** The metric of the competition was defined as balanced accuracy. So, we choose this metric and also to make sure about our results we also used ROC-AUC score to see our model works well or not.
+
 ***Understanding Data*** We realized two main challanges in this dataset. Firstly, columns in this data are mostly categorical columns with many unique values with is not understandable for machines. The first challange is to solve this problem. Second challenge is to handle with highly imbalanced multi-target problem. We understood these two challanges with the understanding of data.
 
  ***Cleaning and Exploring Data*** Mainly, null, zero and missing values changed to mean or collected in a group as named unknown according to nature of the column.
  
- ***Preparing Data to Modeling*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling. With the 
+ ***Preparing Data to Modeling*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling for dealing with first challange. For binary model WoE Encoding and Robust Scaler were used. For, ternany target model, Target Encoder and Robust Scaler used. 
  
- ***Finding Binary Model***
- ***Ternary Target Modeling***
+ ***Finding Binary Model*** Logistic Regression was chosen as baseline. To see best results, Decision Tree, Extra Trees, Random Forest, XGB, K-Neighbors, LGBM Classifiers were tried. Also, grid search were done for Random Forest and parameter selection was done for gradient boosting models. To improve our model, feature importance was seen also.
+ ***Ternary Target Modeling*** For ternary target, Random Forest, LGBM and XGBoost were tried. To handle the second challange as imbalanced target problem, SMOTE over-sampling technique was applied.
+ 
+ The reasons behind the metric, encoder, scaler, over-sampling and model selections can be found in notebooks in detail. 
  
  **Findings**
+ - The best result for binary problem is taken by using Random Forest with grid search as %85 balanced accuracy on test set. 
+ - The best model for ternary model was obtained by XGBoost Classifier with SMOTE over-sampling technique as 86% balanced accuracy on test set.
+ - 4272 wells were dried but they have good water quality. With finding a solution to give source again these wells, they can be functional. Finding clean water sources is not the only problem, to continue to feed these sources are equaly important.
+ - 2226 (7%) wells have enough and soft water but needs repair. Authorities must invest on repairing. Otherwise these will be non-functional.
+ - 8035 (27%) wells has enough, good quality water but they are non-functional. This shows that authorities must work and invest on technology to pump these good sources.
+ - Authorties should check again the wells which they funded.
+ - New tecqniques must be found to feed dry wells and repair wells.
+ 
+ More detailed finding can be found in notebooks with explorations. 
  
  **Future Improvements**
+ 
+ - Feature selection will be done, and feature engineering on categorical columns will be good idea to handle first challange. 
+ - Imbalanced target problem will be solved in more effective way.
+ - Parameter optimization will be improved for XGBoost Model to fix overfitting problem.
+ - Wells can be monitored well and model can be improved according to more accurate and recent data.
+ - Different regions have different factors like climate, rainfall season etc. So, from the main model, different models can be build for each region.
  
  **Repository Guide**
  **Resources**
