@@ -76,15 +76,25 @@ In this project, we used train set and train label set which have 59400 water po
  
  The raw data files which obtained by DataDriven can be found ;
  
+ https://github.com/ezgigm/Project3_TanzanianWaterWell/tree/master/Raw%20Data
+ 
  The cleaned data can be found ;
+ 
+ https://github.com/ezgigm/Project3_TanzanianWaterWell/blob/master/clean_data.csv
  
  **Notebooks:**
  
  Every step for data understanding, cleaning, exploring and feature engineering can be found in ;
  
+ https://github.com/ezgigm/Project3_TanzanianWaterWell/blob/master/STEP1_Cleaning_and_Exploring_Data.ipynb
+ 
  Each modeling, encoding, scaling, feature importance steps can be found in ;
  
+ https://github.com/ezgigm/Project3_TanzanianWaterWell/blob/master/STEP2_Modeling.ipynb
+ 
  For ternary target, modeling, encoding, scaling, over-sampling techniques can be found in ;
+ 
+ https://github.com/ezgigm/Project3_TanzanianWaterWell/blob/master/STEP3_Modeling%20for%20Multi-Class%20Target.ipynb
  
  **Presentation:**
  
