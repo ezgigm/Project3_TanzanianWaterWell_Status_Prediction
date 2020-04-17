@@ -46,6 +46,7 @@ In this project, we used train set and train label set which have 59400 water po
  ***Preparing Data to Modeling:*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling for dealing with first challange. For binary model WoE Encoding and Robust Scaler were used. For, ternany target model, Target Encoder and Robust Scaler used. 
  
  ***Finding Binary Model:*** To make our ternary target modeling easily, first we simplified the problem in binary target. Logistic Regression was chosen as baseline. To see best results, Decision Tree, Extra Trees, Random Forest, XGB, K-Neighbors, LGBM Classifiers were tried. Also, grid search were done for Random Forest and parameter selection was done for gradient boosting models. To improve our model, feature importance was seen also.
+ 
  ***Ternary Target Modeling:*** For ternary target, Random Forest, LGBM and XGBoost were tried. To handle the second challange as imbalanced target problem, SMOTE over-sampling technique was applied.
  
  The reasons behind the metric, encoder, scaler, over-sampling and model selections can be found in notebooks in detail. 
@@ -71,13 +72,13 @@ In this project, we used train set and train label set which have 59400 water po
  
  # Repository Guide
  
- *CSV Files:*
+ **CSV Files:**
  
  The raw data files which obtained by DataDriven can be found ;
  
  The cleaned data can be found ;
  
- *Notebooks:*
+ **Notebooks:**
  
  Every step for data understanding, cleaning, exploring and feature engineering can be found in ;
  
@@ -85,9 +86,11 @@ In this project, we used train set and train label set which have 59400 water po
  
  For ternary target, modeling, encoding, scaling, over-sampling techniques can be found in ;
  
- *Presentation:*
+ **Presentation:**
  
  Presentation can be found from here in .pdf format ;
+ 
+ https://github.com/ezgigm/Project3_TanzanianWaterWell/blob/master/Presentation.pdf
   
 # Resources 
  
