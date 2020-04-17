@@ -18,7 +18,7 @@ With the 86% accuracy, our model can predict the functionality of wells. With th
  - payments of some kind will provide incentive to keep wells functional
  - allocate funds and resources to effective organizations with track record
 
-**Data:** (state challanges of steps)
+**Data:** 
 
 The original data was obtained from the [DrivenData 'Pump it Up: Data Mining the Water Table'](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) competition. Basically, there are 4 different data sets; submission format, training set, test set and train labels set which contains status of wells. With given training set and labels set, competitors are wanted to build predictive model and apply it to test set to determine status of the wells and submit.
 
@@ -26,16 +26,25 @@ In this project, we used train set and train label set which have 59400 water po
 
 **Plan**
 
- **1. Understanding Data** 
+ 1. Understanding Data
+ 
  2. Cleaning and Exploring Data
+ 
  3. Preparing Data to Modeling
- 4. Modeling Data
+ 
+ 4. Finding Binary Model
+ 
+ 5. Ternary Target Modeling
  
  
- *** Understanding Data***
- *** Cleaning and Exploring Data
- *** Preparing Data to Modeling
- *** Modeling Data
+***Understanding Data*** We realized two main challanges in this dataset. Firstly, columns in this data are mostly categorical columns with many unique values with is not understandable for machines. The first challange is to solve this problem. Second challenge is to handle with highly imbalanced multi-target problem. We understood these two challanges with the understanding of data.
+
+ ***Cleaning and Exploring Data*** Mainly, null, zero and missing values changed to mean or collected in a group as named unknown according to nature of the column.
+ 
+ ***Preparing Data to Modeling*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling. With the 
+ 
+ ***Finding Binary Model***
+ ***Ternary Target Modeling***
  
  **Findings**
  
