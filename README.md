@@ -11,13 +11,26 @@ Our goal in this project is to build a model which predicts the functionality of
 
 **Solution:**
 
+With the 86% accuracy, our model can predict the functionality of wells. With the good prediction of functionality, the solutions can be; 
+
+ - prioritizing functioning wells which need repair and yield clean water
+ - targeting repairs to clusters of wells especially those with high populations
+ - payments of some kind will provide incentive to keep wells functional
+ - allocate funds and resources to effective organizations with track record
+
 **Data:** (state challanges of steps)
 
+The original data was obtained from the [DrivenData 'Pump it Up: Data Mining the Water Table'](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) competition. Basically, there are 4 different data sets; submission format, training set, test set and train labels set which contains status of wells. With given training set and labels set, competitors are wanted to build predictive model and apply it to test set to determine status of the wells and submit.
+
+In this project, we used train set and train label set which have 59400 water points data with 40 features. 
+
 **Plan**
- 1. Understanding Data
+
+ **1. Understanding Data** 
  2. Cleaning and Exploring Data
  3. Preparing Data to Modeling
  4. Modeling Data
+ 
  
  *** Understanding Data***
  *** Cleaning and Exploring Data
