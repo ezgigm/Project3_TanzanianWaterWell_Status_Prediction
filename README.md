@@ -24,7 +24,7 @@ The original data was obtained from the [DrivenData 'Pump it Up: Data Mining the
 
 In this project, we used train set and train label set which have 59400 water points data with 40 features. 
 
-**Plan**
+**Plan:**
 
  1. Understanding Data
  
@@ -36,20 +36,20 @@ In this project, we used train set and train label set which have 59400 water po
  
  5. Ternary Target Modeling
  
-***Metric*** The metric of the competition was defined as balanced accuracy. So, we choose this metric and also to make sure about our results we also used ROC-AUC score to see our model works well or not.
+***Metric:*** The metric of the competition was defined as balanced accuracy. So, we choose this metric and also to make sure about our results we also used ROC-AUC score to see our model works well or not.
 
-***Understanding Data*** We realized two main challanges in this dataset. Firstly, columns in this data are mostly categorical columns with many unique values with is not understandable for machines. The first challange is to solve this problem. Second challenge is to handle with highly imbalanced multi-target problem. We understood these two challanges with the understanding of data.
+***Understanding Data:*** We realized two main challanges in this dataset. Firstly, columns in this data are mostly categorical columns with many unique values with is not understandable for machines. The first challange is to solve this problem. Second challenge is to handle with highly imbalanced multi-target problem. We understood these two challanges with the understanding of data.
 
- ***Cleaning and Exploring Data*** Mainly, null, zero and missing values changed to mean or collected in a group as named unknown according to nature of the column.
+ ***Cleaning and Exploring Data:*** Mainly, null, zero and missing values changed to mean or collected in a group as named unknown according to nature of the column.
  
- ***Preparing Data to Modeling*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling for dealing with first challange. For binary model WoE Encoding and Robust Scaler were used. For, ternany target model, Target Encoder and Robust Scaler used. 
+ ***Preparing Data to Modeling:*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling for dealing with first challange. For binary model WoE Encoding and Robust Scaler were used. For, ternany target model, Target Encoder and Robust Scaler used. 
  
- ***Finding Binary Model*** Logistic Regression was chosen as baseline. To see best results, Decision Tree, Extra Trees, Random Forest, XGB, K-Neighbors, LGBM Classifiers were tried. Also, grid search were done for Random Forest and parameter selection was done for gradient boosting models. To improve our model, feature importance was seen also.
- ***Ternary Target Modeling*** For ternary target, Random Forest, LGBM and XGBoost were tried. To handle the second challange as imbalanced target problem, SMOTE over-sampling technique was applied.
+ ***Finding Binary Model:*** To make our ternary target modeling easily, first we simplified the problem in binary target. Logistic Regression was chosen as baseline. To see best results, Decision Tree, Extra Trees, Random Forest, XGB, K-Neighbors, LGBM Classifiers were tried. Also, grid search were done for Random Forest and parameter selection was done for gradient boosting models. To improve our model, feature importance was seen also.
+ ***Ternary Target Modeling:*** For ternary target, Random Forest, LGBM and XGBoost were tried. To handle the second challange as imbalanced target problem, SMOTE over-sampling technique was applied.
  
  The reasons behind the metric, encoder, scaler, over-sampling and model selections can be found in notebooks in detail. 
  
- **Findings**
+ **Findings:**
  - The best result for binary problem is taken by using Random Forest with grid search as %85 balanced accuracy on test set. 
  - The best model for ternary model was obtained by XGBoost Classifier with SMOTE over-sampling technique as 86% balanced accuracy on test set.
  - 4272 wells were dried but they have good water quality. With finding a solution to give source again these wells, they can be functional. Finding clean water sources is not the only problem, to continue to feed these sources are equaly important.
@@ -60,7 +60,7 @@ In this project, we used train set and train label set which have 59400 water po
  
  More detailed finding can be found in notebooks with explorations. 
  
- **Future Improvements**
+ **Future Improvements:**
  
  - Feature selection will be done, and feature engineering on categorical columns will be good idea to handle first challange. 
  - Imbalanced target problem will be solved in more effective way.
@@ -68,9 +68,49 @@ In this project, we used train set and train label set which have 59400 water po
  - Wells can be monitored well and model can be improved according to more accurate and recent data.
  - Different regions have different factors like climate, rainfall season etc. So, from the main model, different models can be build for each region.
  
- **Repository Guide**
+ # Repository Guide
+ 
+ *CSV Files:*
+ 
+ The raw data files which obtained by DataDriven can be found ;
+ 
+ The cleaned data can be found ;
+ 
+ *Notebooks:*
+ 
+ Every step for data understanding, cleaning, exploring and feature engineering can be found in ;
+ 
+ Each modeling, encoding, scaling, feature importance steps can be found in ;
+ 
+ For ternary target, modeling, encoding, scaling, over-sampling techniques can be found in ;
+ 
+ *Presentation:*
+ 
+ Presentation can be found from here in .pdf format ;
+  
  **Resources**
+ 
+ For all explanations of features : https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/
+ 
+ https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/
+ 
+ http://taarifa.org/
+ 
+ https://www.worldometers.info/world-population/tanzania-population/
+ 
+ https://xgboost.readthedocs.io/en/latest/parameter.html
+ 
+ https://lightgbm.readthedocs.io/en/latest/
+ 
+ https://water.org/our-impact/tanzania/
+ 
+ 
  **Team Members**
+ 
+**Ezgi Gumusbas:** https://github.com/ezgigm
+
+**Mark Subra:** https://github.com/geomms
+
  
  
  
