@@ -43,7 +43,7 @@ In this project, we used train set and train label set which have 59400 water po
 
  ***Cleaning and Exploring Data:*** Mainly, null, zero and missing values changed to mean or collected in a group as named unknown according to nature of the column.
  
- ***Preparing Data to Modeling:*** To prepare our data to mechine learning, we did some feature engineering, encoding and scaling for dealing with first challange. For binary model WoE Encoding and Robust Scaler were used. For, ternany target model, Target Encoder and Robust Scaler used. 
+ ***Preparing Data to Modeling:*** To prepare our data to machine learning, we did some feature engineering, encoding and scaling for dealing with first challenge. For binary model WoE Encoding and Robust Scaler were used. For, ternary target model, Target Encoder and Robust Scaler used. 
  
  ***Finding Binary Model:*** To make our ternary target modeling easily, first we simplified the problem in binary target. Logistic Regression was chosen as baseline. To see best results, Decision Tree, Extra Trees, Random Forest, XGB, K-Neighbors, LGBM Classifiers were tried. Also, grid search were done for Random Forest and parameter selection was done for gradient boosting models. To improve our model, feature importance was seen also.
  
