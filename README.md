@@ -1,4 +1,4 @@
-# Pump It Up: Data Mining the Water Tabl
+# Pump It Up: Data Mining the Water Table
 
 DrivenData has begun a competition ['Pump It Up'](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) to point the Tanzanian clean water problem. In our module 3 project, we worked on this data science competition.
 
